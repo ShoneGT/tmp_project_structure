@@ -1,5 +1,6 @@
 import React from 'react';
 import {BitcoinPriceIndex} from "../../models/Price.ts";
+import './PriceTable.scss'
 
 interface PriceTableProps {
     data: BitcoinPriceIndex;
@@ -9,7 +10,7 @@ const PriceTable: React.FC<PriceTableProps> = ({ data }) => {
     const { bpi } = data;
 
     return (
-        <table>
+        <table className="table">
             <thead>
             <tr>
                 <th>Currency</th>

@@ -1,0 +1,21 @@
+
+$font-family-sans: 'Helvetica Neue', Arial, sans-serif;
+$font-family-serif: 'Georgia', Times, serif;
+
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-md: 16px;
+$font-size-lg: 20px;
+$font-size-xl: 24px;
+$font-size-xxl: 32px;
+
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Mixin za primenu fonta
+@mixin font-style($size, $weight: $font-weight-normal, $family: $font-family-sans) {
+  font-size: $size;
+  font-weight: $weight;
+  font-family: $family;
+}

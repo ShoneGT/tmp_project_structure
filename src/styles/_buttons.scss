@@ -1,0 +1,38 @@
+// src/styles/_buttons.scss
+
+@import 'colors';
+@import 'spacing';
+@import 'typography';
+
+.button {
+  @include font-style($font-size-md, $font-weight-bold);
+  background-color: $primary-color;
+  color: #fff;
+  padding: $spacing-sm $spacing-md;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: $primary-dark;
+  }
+
+  &--secondary {
+    background-color: $secondary-color;
+
+    &:hover {
+      background-color: darken($secondary-color, 10%);
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border: 2px solid $primary-color;
+    color: $primary-color;
+
+    &:hover {
+      background-color: $primary-light;
+    }
+  }
+}

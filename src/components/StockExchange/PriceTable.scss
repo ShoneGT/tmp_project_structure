@@ -1,0 +1,43 @@
+
+@import '../../styles/colors';
+@import '../../styles/spacing';
+@import '../../styles/typography';
+
+.table {
+  background-color: $primary-color;
+  width: 100%;
+  border-collapse: collapse;
+  margin: $spacing-md 0;
+
+  th, td {
+    padding: $spacing-sm;
+    text-align: left;
+    font-size: $font-size-md;
+    color: $text-color;
+  }
+
+  th {
+    background-color: $primary-color;
+    color: #fff;
+    font-weight: $font-weight-bold;
+  }
+
+  td {
+    background-color: $background-color;
+  }
+
+  tr:nth-child(even) {
+    background-color: $primary-light;
+  }
+
+  // Dodaj efekat za hover na redove
+  tr:hover {
+    background-color: $secondary-color;
+    color: #fff;
+  }
+
+  // Dodaj obrub tabeli
+  th, td {
+    border: 1px solid $text-light-color;
+  }
+}
